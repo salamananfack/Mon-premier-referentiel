@@ -1,0 +1,264 @@
+body{
+    background: url(../img/Essaie2.jpg);
+    background-color: #4365fcb9;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 1em 3em 0em 1em;
+    width: 97%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    position: relative;
+}
+.navbar li {
+    list-style: none;
+}
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+header .navbar li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #ee810df8;
+}
+/*body________________________________________*/
+main{
+    width: 97%;
+    min-height: 542px;
+    margin: 150px 0px 0px 0px;
+    padding: 15px;
+}
+/*partie_gauche____________________________________*/
+
+.gauche{
+    height: 32rem;
+    width: 30%;
+    padding: 18px;
+    position: absolute;
+
+}
+#boite_une{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.ligne{
+    border: 1px solid #fff;
+    width: 25px;
+    margin: 0em 0em 2em 0em;
+}
+.lieu{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0em 0em 2em 0em;
+}
+.objet{
+    font-size: 4em;
+    font-weight: bold;
+    font-family: arial;
+    color: aliceblue;
+    margin: 0em 0em 2em 0em;
+}
+.description{
+    color: #fff;
+    margin: 0em 0em 2em 0em;
+}
+p{
+    margin: 0em 0em 2em 0em;
+}
+.icon{
+    text-decoration: none;
+    cursor: pointer;
+}
+.boutton{
+    border: 1px solid #baebf0;
+    color: #fff;
+    padding: 7px 7px 7px 7px;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.boutton:hover{
+    color: #ffffff;
+    background-color: #6475be;   
+}
+.discover{
+    padding: 10px;
+}
+
+/*partie de droite______________________________________________*/
+
+.droite{
+    height: 136vh;
+    width: 59%;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    transform: translate(-50);
+    top: 165px;
+    overflow: hidden;
+}
+
+#boite_deux{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    left: 0%;
+    width: 100%;
+    height: 136vh;
+    overflow: hidden;
+}
+.un ,.deux ,.trois ,.quatre ,.cinq{
+    position: relative;
+    display: inline-block;
+    margin: auto 3px;
+    /*border: 1px solid rgba(2, 14, 68, 0.705);*/
+    width: 125%;
+    min-height: 255px;
+    border-radius: 3%;
+    overflow: hidden;
+    animation: animate linear infinite;
+    animation-duration: 20s;
+}
+.cinq{
+    display: none;
+}
+#voiture{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 0em;
+    overflow: hidden;
+    max-height: 100vh;
+}
+@keyframes animate{
+    /*0% {
+        transform: translateX(100vh) scale(0);
+    }
+    100% {
+        transform: translateX(-10vh) scale(1);
+    }*/
+    0% {
+        transform: translate(-50rem, 0);
+    }
+    50% {
+        transform: translate(50rem, 0);
+    }
+    100% {
+        transform: translate(30rem, 0);
+    }
+}
+/*
+@keyframes anim{
+    0% {
+        transform: translateX(100vh) scale(0);
+    }
+    100% {
+        transform: translateX(100vh) scale(5);
+    }
+}*/
+@keyframes anim{
+    0% {
+        transform: translateX(0vh) scale(0);
+    }
+    10% {
+        transform: translateX(0vh) scale(1);
+    }
+    20% {
+        transform: translateX(0vh) scale(2);
+    }
+    50% {
+        transform: translateX(0vh) scale(3);
+    }
+    75% {
+        transform: translateX(0vh) scale(4);
+    }
+    100% {
+        transform: translateX(0vh) scale(5);
+    }
+}
+.img1 .img2 .img3 .img4{
+    border-radius: 5px;
+    box-shadow: 3px 0px 12px 1px #bdb7b7;
+}
+/* section_______________________ */
+
+#section{
+    position: relative;
+    margin-top: 70px;
+}
+.a ,.b{
+    border: 1px solid #fff;
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.884);
+    text-align: center;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+.b{
+    margin-left: 10px;
+}
+.barre_de_progression{
+    border-top: 2px solid #fff;
+    width: 80%;
+    position: relative;
+    display: inline-block;
+    height: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.c{
+    display: inline-block;
+    position: relative;
+    width: 78%;
+    margin: auto;
+    top: 30px;
+    color: #fff;
+    left: 45px;
+}
+.numerotation{
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: times new roman;
+}
+b{
+    position: relative;
+    top: 23px;
+}
+
+/*=========== ANIMATION  =========*/
+@keyframes stretch {
+    from{
+        width: 125px;
+        min-height: 255px
+    }
+    to{
+        width: 100%;
+        min-height: 100vh;
+    }
+  }

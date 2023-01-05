@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--un commentaire pour git-->
+    <header>
+        <a href="#" class="logo">GLOBE EXPRESS</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+    <!--un autre commentaire pour git-->    
+        <ul class="navbar" id="ma-navbar">
+            <li><a href="#HOME" onclick="toggleMenu();">HOME</a></li>
+            <li><a href="#HOLIDAYS" onclick="toggleMenu();">HOLIDAYS</a></li>
+            <li><a href="#DESTINATIONS" onclick="toggleMenu();">DESTINATIONS</a></li>
+            <li><a href="#FIGHTS" onclick="toggleMenu();">FIGHTS</a></li>
+            <li><a href="#OFFERS" onclick="toggleMenu();">OFFERS</a></li>
+            <li><a href="#CONTACTS" onclick="toggleMenu();">CONTACTS</a></li>
+            <li><a href="#recherche" onclick="toggleMenu();"><img src="../images/search.png" width="15px" height="15px" alt="recherche" id="img1"></a></li>
+            <li><a href="#contact" onclick="toggleMenu();"><img src="../images/user.png" width="15px" height="15px"  alt="contact" id="img1"></a></li>   
+        </ul>
+    </header>
+    <main>
+        <!--      PARTY GAUCHE    -->
+        <sapn class="gauche">
+            <div id="boite_une">
+                <sapn class="ligne"></sapn>
+                <span class="lieu">Cameroun à YAOUNDE</span>
+                <span class="objet">DUPLEX <br>DE VACANCE</span>
+                <span class="description">très jolie maison, plusieur chambre, pluseiur, <br>
+                     plusieur douche, cuisine et salon. Meublé et moin couteux.</span>
+                <p><span class="icon"><a href="#" class="icon"><img src="../images/.jpg" alt="icon"></a></span>
+                <a href="#" class="boutton"><span class="discover">DISCOVER LOCATION</span></a></p>
+            </div>
+        </sapn>
+        <!--      PARTY DROITE    -->
+        <sapn class="droite">
+            <div id="boite_deux" class="swiper">
+                <div id="voiture" class="swiper-wrapper">
+                    <span class="un swiper-slide" id="un">
+                        <a href="#">
+                            <img src="../img/imga.jpg" class="img1" alt="voiture" width="220" height="300" class="style-img">
+                        </a>
+                    </span>
+                    <span class="deux swiper-slide" id="deux">
+                        <a href="#">
+                            <img src="../img/imgb.jpg" class="img2" alt="voiture" width="220" height="300" class="style-img">
+                        </a>
+                    </span>
+                    <span class="trois swiper-slide" id="trois">
+                        <a href="#">
+                            <img src="../img/imgc.jpg" class="img3" alt="voiture" width="220" height="300" class="style-img">
+                        </a>
+                    </span>
+                    <span class="quatre swiper-slide" id="quatre">
+                        <a href="#">
+                            <img src="../img/imgd.jpg" class="img4" alt="voiture" width="220" height="300" class="style_img">
+                        </a>
+                    </span>
+                    <span class="cinq swiper-slide" id="cinq">
+                        <a href="#">
+                            <img src="../img/Unknow.jpg" class="img4" alt="voiture" width="220" height="300" class="style_img">
+                        </a>
+                    </span>
+                </div>    
+                <div id="section">
+                    <span class="a swiper-button-prev"><b> < </b></span>
+                    <span class="b swiper-button-next"><b> > </b></span>
+                    <span class="c">
+                        <!--<span class="barre_de_progression"> </span>-->
+                        <progress class="barre_de_progression" value="50" max="100"></progress>
+                        <span class="numerotation">01</span>
+                    </span>
+                </div>
+            </div>
+        </sapn>
+    </main>
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
+
+    </script>
+</body>
+</html> 
